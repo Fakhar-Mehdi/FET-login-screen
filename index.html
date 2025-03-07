@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>VE Login Screen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div class='container'>
+    <div>
+      <h1 class='title'>Virtual Escape</h1>
+    </div>
+
+    <div class='subtitle'>Enter your game code to get started</div>
+
+    <div class='form'>
+      <div class='input-div'>
+        <input type="text" maxlength="8" placeholder='Game Code' class='input-code'>
+
+        <div class="tooltip">
+          <img
+            src="https://veautomation-fe-dev-dot-virtual-escape-295705.ts.r.appspot.com/static/media/tooltip.ccf899e2664826f8941278903cedc3a7.svg"
+            alt="Image" class='tooltip-image'>
+          <span class="tooltip-text">
+            Your game code is 8 characters long and can be
+            <br>
+            found in the confirmation email. Up to 6 players
+            <br>
+            can use the same game code to log in.
+          </span>
+        </div>
+
+      </div>
+
+
+
+      <div class='buttons'>
+        <button class='test-connection-button' type="button">Test Connection</button>
+        <button class='login-button' type="button">
+          Log in
+
+          <i class="fas fa-fingerprint" aria-hidden="true"></i>
+
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/7c17d81970.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>.
+
 </body>
+
 </html>
