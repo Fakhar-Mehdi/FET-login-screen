@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   height: 350px;
-  max-width: 790px;
+  width: 790px;
 }
 
 .title {
@@ -158,7 +158,7 @@ input::placeholder {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   .container {
     max-width: 95%;
   }
@@ -170,7 +170,8 @@ input::placeholder {
 
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 500px) {
 
   .tooltip .tooltip-text {
     font-size: 10px;
@@ -192,4 +193,30 @@ input::placeholder {
   }
 
 
+}
+
+@media screen and (max-width: 300px) {
+
+  .tooltip .tooltip-text {
+    font-size: 8px;
+    width: 60px;
+    left: -40px;
+  }
+
+  .input-code,
+  .buttons {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .subtitle {
+    font-size: 0.6em;
+  }
+
+  button {
+    font-size: 0.5em;
+  }
 }
