@@ -10,6 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  width: 100% !important;
+  margin: 0
 }
 
 .container {
@@ -20,7 +22,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   height: 350px;
-  max-width: 790px;
+  width: 790px;
 }
 
 .title {
@@ -62,7 +64,7 @@ body {
 
 
 .input-code {
-  width: 56%;
+  width: 60%;
   border-radius: 30px;
   padding-left: 20px;
   padding-top: 13px;
@@ -81,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 59%;
+  width: 60%;
   text-align: center;
   margin-top: 5px;
   pointer-events: auto;
@@ -128,7 +130,9 @@ input::placeholder {
 
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 320px;
+  font-size: 12px;
+  width: 100px;
+  left: -10px;
   background-color: red;
   color: #fff;
   text-align: center;
@@ -151,4 +155,68 @@ input::placeholder {
   background-image: linear-gradient(#f80705, #7b1e1d);
   cursor: pointer;
   color: white;
+}
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    max-width: 95%;
+  }
+
+  button {
+    padding: 9px 20px;
+    font-size: 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .tooltip .tooltip-text {
+    font-size: 10px;
+    width: 80px;
+    left: -20px;
+  }
+
+  .input-code,
+  .buttons {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .subtitle {
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media screen and (max-width: 300px) {
+
+  .tooltip .tooltip-text {
+    font-size: 8px;
+    width: 60px;
+    left: -40px;
+  }
+
+  .input-code,
+  .buttons {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .subtitle {
+    font-size: 0.6em;
+  }
+
+  button {
+    font-size: 0.5em;
+  }
 }
